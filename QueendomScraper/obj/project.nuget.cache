@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "taQqXz+Nzvwz6Jxfv8FDzxGPWlmSTbM0LLOXi51wnXXaSUUhk2VFiiFroXHd8bhOh42cU5yenDHEGEyGJHfpvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jens_\\source\\repos\\QueendomScraper\\QueendomScraper\\QueendomScraper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jens_\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
+  ],
+  "logs": []
+}

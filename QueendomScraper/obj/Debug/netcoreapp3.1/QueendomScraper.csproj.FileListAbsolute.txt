@@ -1,0 +1,13 @@
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\bin\Debug\netcoreapp3.1\QueendomScraper.exe
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\bin\Debug\netcoreapp3.1\QueendomScraper.deps.json
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\bin\Debug\netcoreapp3.1\QueendomScraper.runtimeconfig.json
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\bin\Debug\netcoreapp3.1\QueendomScraper.runtimeconfig.dev.json
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\bin\Debug\netcoreapp3.1\QueendomScraper.dll
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\bin\Debug\netcoreapp3.1\QueendomScraper.pdb
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\obj\Debug\netcoreapp3.1\QueendomScraper.csprojAssemblyReference.cache
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\obj\Debug\netcoreapp3.1\QueendomScraper.AssemblyInfoInputs.cache
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\obj\Debug\netcoreapp3.1\QueendomScraper.AssemblyInfo.cs
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\obj\Debug\netcoreapp3.1\QueendomScraper.csproj.CoreCompileInputs.cache
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\obj\Debug\netcoreapp3.1\QueendomScraper.dll
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\obj\Debug\netcoreapp3.1\QueendomScraper.pdb
+C:\Users\jens_\source\repos\QueendomScraper\QueendomScraper\obj\Debug\netcoreapp3.1\QueendomScraper.genruntimeconfig.cache

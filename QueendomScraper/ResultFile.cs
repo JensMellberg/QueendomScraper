@@ -12,9 +12,11 @@ namespace QueendomScraper
         const string HtmlEnd = "</div>";
         List<string> html;
         int counter;
+        string path;
 
-        public ResultFile()
+        public ResultFile(string path)
         {
+            this.path = path;
             html = new List<string>();
             counter = 0;
         }
@@ -29,7 +31,7 @@ namespace QueendomScraper
 
         public void WriteToFile(List<int> timeOuts, int totalQuizzes)
         {
-            using (var writer = new StreamWriter("QuizList.html"))
+            using (var writer = new StreamWriter(path))
             {
                 if (timeOuts.Any())
                 {

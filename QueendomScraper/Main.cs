@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -20,14 +21,15 @@ namespace QueendomScraper
         const int FirstId = 1;
         const int LastId = 5000;
         const string BaseUrl = "https://www.queendom.com/tests/access_page/index.htm?idRegTest=";
+        const string FilePath = "QuizList.html";
 
-        public void Run()
+        private void ParseFile()
         {
             var httpClientHandler = new HttpClientHandler();
             httpClientHandler.AllowAutoRedirect = false;
             httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
             this.client = new HttpClient(httpClientHandler);
-            resultFile = new ResultFile();
+            resultFile = new ResultFile(FilePath);
             var counter = new Counter();
             totalQuizzes = 0;
             TimeOuts = new List<int>();
@@ -49,6 +51,35 @@ namespace QueendomScraper
             }
 
             resultFile.WriteToFile(TimeOuts, totalQuizzes);
+            Console.WriteLine("Finished parsing.");
+        }
+
+        public void Run()
+        {
+            Console.WriteLine("Available commands:\n");
+            Console.WriteLine("parse : Write down all quizzes to html.");
+            Console.WriteLine("open : Opens the html file.");
+
+            var command = Console.ReadLine();
+            while (true)
+            {
+                switch (command)
+                {
+                    case "parse": this.ParseFile(); break;
+                    case "open": this.OpenFile(); break;
+                    default: Console.WriteLine("Unrecognized command."); break;
+                }
+
+                command = Console.ReadLine();
+            }
+        }
+
+        private void OpenFile()
+        {
+            var processInfo = new ProcessStartInfo();
+            processInfo.UseShellExecute = true;
+            processInfo.FileName = string.Format("file:///{0}/{1}", Directory.GetCurrentDirectory(), FilePath);
+            Process.Start(processInfo);
         }
 
         private async void DoCall(int id, Counter counter)
